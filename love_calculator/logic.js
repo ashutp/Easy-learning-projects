@@ -163,23 +163,23 @@ function clearfun() {
   return 0;
 }
 
-boy.addEventListener("click",()=>{
-  const ele=document.getElementById("ele");
-  ele.textContent="";
-  const btn=document.getElementsByTagName("button");
-  btn.textContent="Result";
+boy.addEventListener("click", () => {
+  const ele = document.getElementById("ele");
+  ele.textContent = "";
+   const ele2 = document.getElementById("btn");
+  ele2.textContent = "";
+  // btn.textContent="Result";
 });
-girl.addEventListener("click",()=>{
-  const ele=document.getElementById("ele");
-  ele.textContent="";
-  const btn=document.getElementsByTagName("button");
-  btn.textContent="Result";
-})
+girl.addEventListener("click", () => {
+  const ele2 = document.getElementById("btn");
+  ele2.textContent = "";
+    const ele = document.getElementById("ele");
+  ele.textContent = "";
+  // btn.textContent="Result";
+});
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-
-  
 
   if (boy.value.length > 0 && girl.value.length > 0) {
     const BOY = boy.value;
@@ -194,9 +194,9 @@ form.addEventListener("submit", (e) => {
     btn.textContent = ` ${result}% the love`;
     btn.style.border = "none";
     btn.style.backgroundColor = "white";
-    
+
     const h2 = document.getElementById("ele");
- 
+
     girl.after(h2);
     if (result > 50) {
       const ramdom = Math.floor(Math.random() * (len - len / 2) + 1) + len / 2;
