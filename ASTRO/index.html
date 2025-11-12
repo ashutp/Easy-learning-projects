@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ASTRO</title>
+    <link rel="stylesheet" href="first.css" />
+  </head>
+  <body>
+    <form id="form">
+      <h1>Astrology Insights</h1>
+      <label for="fn">First Name</label>
+      <input
+        type="text"
+        id="fn"
+        name="first_name"
+        placeholder="Enter your name"
+        required
+
+        class="inp"
+      />
+      <br />
+      <br />
+      <label for="ln">Last Name</label>
+      <input
+        type="text"
+        id="ln"
+        name="last_name"
+        placeholder="Enter your last name"
+        required
+        class="inp"
+      />
+      <br />
+      <br />
+      <label for="db">D.O.B&nbsp;&nbsp;&nbsp;</label>
+      <input type="date" id="db" name="dob" required 
+      class="inp"/>
+      <br />
+      <br />
+      <label for="pl">Place of Birth</label>
+      <input
+        type="text"
+        id="pl"
+        name="address"
+        placeholder=" State / District / Address required  "
+        class="inp"
+      />
+      <br />
+      <br />
+      <button type="submit">Get Insights</button>
+      <br />
+      <br />
+
+    </form>
+   <script src="./logic.js"></script>
+  </body>
+</html>
